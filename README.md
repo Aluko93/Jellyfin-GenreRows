@@ -1,83 +1,68 @@
-# # Jellyfin GenreRows
+# GenreRows v1.4.6 — Smart Collections & ActorFlix
 
-**Advanced media browsing, customizable content rows, actor galleries and year-based movie collections for Jellyfin.**
+GenreRows is a free and open-source plugin that extends Jellyfin Web with customizable genre rows, dynamic media collections, actor discovery and optional private media browsing.
 
-GenreRows is a free and open-source Jellyfin plugin designed to improve media discovery and create a more flexible, visually appealing browsing experience.
+### Main Features
 
-It extends the traditional Jellyfin interface with customizable media collections, actor-focused navigation, genre categories and optional modules.
+**Smart Collections**
+- Create up to 20 dynamic media collections.
+- Filter by genres, actors, production years, ratings, watched status, audio languages and 4K.
+- Combine multiple filtering conditions.
+- Preview results and configure sorting options.
+- Automatically refresh collections while Home is visible.
 
-## Features
+**ActorFlix**
+- Visual actor discovery with optional TMDB popularity ranking.
+- Dedicated actor profiles with biographies and favorites.
+- Separate Movies and TV series filmographies.
+- Group episode credits into individual TV series cards.
+- Display available season information where supported by local metadata.
+- Genre and year filtering, multiple sorting modes and smooth gallery navigation.
 
-### Genre-Based Browsing
-- Dedicated media rows organized by genre.
-- Automatic category artwork.
-- Visual content previews.
-- Improved navigation and media discovery.
+**Enhanced Genre Rows**
+- Automatic category artwork and video previews.
+- Improved title variety across genre rows.
+- Progressive loading and optimized image rendering.
+- Keyboard and remote-control navigation.
 
-### Actor Gallery
-- Browse actors through a dedicated visual gallery.
-- Discover movies associated with individual actors.
-- Actor-focused navigation and sorting options.
+**Optional Adult Module**
+- Separate private-media browsing.
+- Optional password and session protection.
+- Independent activation.
 
-### Year-Based Movie Collections
-- Organize and discover movies by release year.
-- Create dynamic collections based on available library content.
-- Explore movies using different sorting and filtering criteria.
+### What's New in v1.4.6
 
-### Customizable Media Rows
-- Custom row titles.
-- Library selection.
-- Content filtering and sorting.
-- Configurable number of displayed items.
-- Independent activation and deactivation of available modules.
+- Separate Movies and TV series sections in actor profiles.
+- Group episode credits into one TV series card.
+- Combine matching season information across libraries and paginated results.
+- Show partial local season coverage and Specials when applicable.
+- Preserve existing sorting, filters, favorites and navigation behavior.
+- Include updated interface translations.
 
-### Optional Adult Module
-- Dedicated adult media gallery.
-- Separate interface and optional password protection.
-- Can be enabled or disabled independently.
+### Compatibility
 
-The Adult module's password feature is not a substitute for Jellyfin's own access permissions.
+**Target: Jellyfin Server 12.2.0 / .NET 10**
 
-### Multilingual Interface
-Supports English, Italian, French, German, Spanish and Portuguese.
+Build and automated tests completed successfully against Jellyfin 12.2.0 packages.
 
-## Version
+This release has not yet been validated on the developer's production server or a physical television. Other Jellyfin versions are not claimed compatible.
 
-**Current release: v1.4.6**
+### Installation
 
-The project is actively developed with ongoing improvements to content organization, customization and the browsing interface.
+Download the compiled plugin ZIP attached to this release.
 
-## Compatibility
+Back up the existing GenreRows plugin directory and configuration before upgrading. Follow the included installation instructions for manual or Podman installations.
 
-Developed for Jellyfin.
+Only one GenreRows version should be installed at a time.
 
-Compatibility depends on the Jellyfin server version and the specific plugin build. Please consult the release notes for tested versions before installing.
+### License
 
-## Installation
+GNU General Public License v3.0 (GPL-3.0).
 
-1. Visit the [Releases page](https://github.com/Aluko93/Jellyfin-GenreRows/releases).
-2. Download the appropriate plugin ZIP archive.
-3. Stop your Jellyfin server.
-4. Extract the package into your Jellyfin plugins directory, preserving the required plugin folder structure.
-5. Restart Jellyfin.
-6. Verify the plugin installation in the Jellyfin dashboard.
+Source code is available for inspection, modification and redistribution under the license terms.
 
-For Docker or Podman installations, use the persistent configuration volume containing the Jellyfin plugins directory.
+### Disclaimer
 
-## Open Source
+GenreRows is an independent community project and is not officially affiliated with or endorsed by Jellyfin.
 
-GenreRows is distributed under the **GNU General Public License v3.0 (GPL-3.0)**.
-
-Everyone is welcome to use, inspect, modify and contribute to the project under the terms of the license.
-
-See [LICENSE](LICENSE) for details.
-
-## Feedback and Contributions
-
-Suggestions, bug reports and contributions are welcome.
-
-Please use GitHub Issues and include your Jellyfin version, plugin version and relevant logs when reporting problems.
-
-## Disclaimer
-
-GenreRows is an independent community-developed plugin and is not officially affiliated with or endorsed by the Jellyfin project.
+TMDB data and third-party components retain their respective licensing and attribution terms.
